@@ -38,10 +38,11 @@
   padding-left: 16px;
   background-color: transparent;
   margin-right: 12px;
+  &:focus {
+    border-color: var(--hover-color);
+  }
 }
-.subscript__mail:focus {
-  border-color: var(--hover-color);
-}
+
 .subscript__icon-send {
   width: 24px;
   height: 24px;

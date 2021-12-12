@@ -11,6 +11,10 @@
 .contacts__icon {
   vertical-align: middle;
   margin-right: 10px;
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+  }
 }
 .icon__mail {
   width: 16px;
@@ -28,13 +32,8 @@
   transition-property: color;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-timing);
-}
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--hover-color);
-}
-
-.contacts__icon:hover,
-.contacts__icon:focus {
-  fill: var(--hover-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }

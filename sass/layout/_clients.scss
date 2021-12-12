@@ -16,10 +16,11 @@
   margin-left: 30px;
   width: 170px;
   height: 92px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
-.clients__item:first-child {
-  margin-left: 0;
-}
+
 .clients__link {
   display: flex;
   justify-content: center;
@@ -32,13 +33,13 @@
   transition-property: color, border;
   transition-duration: var(--animation-duration), var(--animation-duration);
   transition-timing-function: var(--animation-timing), var(--animation-timing);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+  }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--hover-color);
-  color: var(--hover-color);
-}
 .clients__icon {
   width: 106px;
   height: 60px;

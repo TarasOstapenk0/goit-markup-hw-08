@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  li:nth-child(n + 2) {
+    margin-left: 8px;
+  }
 }
-.portfolio__list > li:nth-child(n + 2) {
-  margin-left: 8px;
-}
+
 .portfolio__buttons {
   background-color: var(--second-background-color);
   border-radius: 4px;
@@ -23,9 +24,15 @@
     var(--animation-duration);
   transition-timing-function: var(--animation-timing), var(--animation-timing),
     var(--animation-timing);
+  &:focus,
+  &:hover,
+  .portfolio__current {
+    color: var(--contrast-color);
+    background-color: var(--hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
-.portfolio__buttons:focus,
-.portfolio__buttons:hover,
 .portfolio__current {
   color: var(--contrast-color);
   background-color: var(--hover-color);

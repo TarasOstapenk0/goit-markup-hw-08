@@ -13,9 +13,9 @@
 }
 .team-list {
   display: flex;
-}
-.team-list > li:nth-child(n + 2) {
-  margin-left: 30px;
+  li:nth-child(n + 2) {
+    margin-left: 30px;
+  }
 }
 .team-list__member {
   background: var(--contrast-color);

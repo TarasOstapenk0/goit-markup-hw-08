@@ -10,4 +10,13 @@
   transition-property: opacity, visibility;
   transition-duration: var(--animation-duration), var(--animation-duration);
   transition-timing-function: var(--animation-timing), var(--animation-timing);
+  &.is-hidden .modal {
+    transform: scale(3) translate(0) rotate(360deg);
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

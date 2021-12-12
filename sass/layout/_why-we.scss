@@ -5,11 +5,6 @@
 }
 .why-we__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-}
-.why-we__item:nth-child(n + 2) {
-  margin-left: 30px;
-}
-.why-we__item {
   width: 270px;
   height: 120px;
   background-color: var(--second-background-color);
@@ -17,7 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:nth-child(n + 2) {
+    margin-left: 30px;
+  }
 }
+
 .why-we__icon {
   width: 70px;
   height: 70px;

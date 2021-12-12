@@ -15,14 +15,14 @@
 }
 .what-we-do__item {
   position: relative;
+  &:nth-child(n + 2) {
+    margin-left: 30px;
+  }
 }
 .what-we-do__img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.what-we-do__item:nth-child(n + 2) {
-  margin-left: 30px;
 }
 .what-we-do__name {
   display: flex;
