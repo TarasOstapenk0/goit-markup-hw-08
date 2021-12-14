@@ -639,10 +639,6 @@ body {
   color: var(--contrast-color);
 }
 
-.subscript__header {
-  margin-bottom: 20px;
-}
-
 .subscript__button {
   width: 200px;
   height: 50px;
@@ -686,6 +682,7 @@ body {
 
 .subcript__row {
   display: flex;
+  margin-top: 20px;
 }
 
 .portfolio-projects__overflow {
