@@ -30,7 +30,10 @@
 .socials_link--dark {
   color: var(--social-link);
 }
-
+.socials_link--light {
+  color: var(--contrast-color);
+  background: var(--social-link-dark-bg);
+}
 .socials__icon {
   display: block;
   width: 20px;
