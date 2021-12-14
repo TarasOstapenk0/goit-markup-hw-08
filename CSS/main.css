@@ -441,7 +441,7 @@ body {
 
 .order__label {
   margin-bottom: 4px;
-  color: var(--social-link);
+  color: var(--modal-label);
 }
 
 .order__input {
@@ -522,7 +522,7 @@ body {
 .order__policy span {
   width: 16px;
   height: 15px;
-  border: 1px solid #000000;
+  border: 1.5px solid #000000;
   border-radius: 2px;
   margin-right: 7px;
   display: flex;
