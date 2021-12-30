@@ -1,5 +1,9 @@
 .what-we-do {
   padding-top: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .what-we-do__header {
   font-weight: 700;
