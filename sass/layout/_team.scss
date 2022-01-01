@@ -12,7 +12,7 @@
   margin-bottom: 30px;
 }
 .team-list {
-  // display: flex;
+  // max-width: 450px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -45,18 +45,8 @@
   }
 }
 .team-list__img {
-  display: block;
-  max-width: 450px;
-  // width: 100%;
-
-  @media screen and (min-width: 768px) {
-    max-width: 354px;
-    // height: 100%;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    // height: 100%;
-  }
+  width: 100%;
+  height: auto;
 }
 .team-list__card {
   box-sizing: border-box;
