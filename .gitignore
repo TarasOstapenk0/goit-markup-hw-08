@@ -102,9 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
-# VSC0ode
-/.vscode/
-.gitignore
+# VSCode
+/.vscode/*
 #ignore folders
-/.image-copy/
-.gitignore
+/.image-copy/*
+
