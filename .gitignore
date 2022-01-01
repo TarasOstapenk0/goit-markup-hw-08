@@ -105,5 +105,5 @@ dist
 # VSCode
 .vscode/*
 #ignore folders
-.image-copy/*
+images-copy/*
 
