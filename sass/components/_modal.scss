@@ -2,8 +2,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 581px;
+  width: 320px;
+  height: 510px;
   background-color: var(--elements-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -14,18 +14,25 @@
   transition-property: transform;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-timing);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 581px;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
   }
 }
 .modal__header {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 10px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-color);
   margin-bottom: 12px;
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
 }
 
 .close-button {
@@ -48,7 +55,10 @@
 }
 
 .order__form {
-  width: 370px;
+  width: 250px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
@@ -57,11 +67,15 @@
   margin-bottom: 10px;
 }
 .order__field-comment {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
 }
 .order__label {
   margin-bottom: 4px;
   color: var(--modal-label);
+  font-size: 12px;
 }
 .order__input {
   width: 100%;
@@ -120,17 +134,17 @@
 
 .order__checkbox {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .order__policy {
-  font-size: 12px;
-  line-height: 1.71;
+  font-size: 7px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--modal-label);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 15px;
   & span {
     width: 16px;
     height: 15px;
@@ -144,6 +158,11 @@
     transition-property: border, background-color;
     transition-duration: var(--animation-duration), var(--animation-duration);
     transition-timing-function: var(--animation-timing), var(--animation-timing);
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.71;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -172,19 +191,21 @@
   color: var(--modal-link);
   text-decoration-skip-ink: none;
 }
-.order-buttom {
-  text-align: center;
-}
-.order-buttom__btm {
+
+.order__btm {
   background: var(--modal-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  width: 200px;
-  height: 50px;
+  width: 150px;
+  height: 37.5px;
   color: var(--contrast-color);
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  @media screen and (min-width: 480px) {
+    width: 200px;
+    height: 50px;
+  }
 }

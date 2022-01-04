@@ -9,13 +9,14 @@
   display: block;
   background-color: var(--contrast-color);
   margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-    // margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
+    display: block;
   }
 }
 .portfolio-projects__link {
@@ -35,6 +36,11 @@
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .portfolio-projects__card {
@@ -42,11 +48,14 @@
   border-top: 0;
   box-sizing: border-box;
   padding: 20px 24px;
+  @media screen and (min-width: 768px) {
+    flex-grow: +1;
+  }
 }
 .portfolio-projects__name {
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;

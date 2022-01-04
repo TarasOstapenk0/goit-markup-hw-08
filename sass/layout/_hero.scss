@@ -8,8 +8,7 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 118px;
-  padding-bottom: 198px;
+  padding: 118px 0;
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-bg-mob-2x.jpg);
@@ -30,8 +29,7 @@
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-bg-note-1x.jpg);
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding: 200px 0;
   }
   @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -45,12 +43,16 @@
 }
 .hero__header {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
+  font-size: 20px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--contrast-color);
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
