@@ -419,7 +419,12 @@ body {
   opacity: 1;
   z-index: 5;
   min-width: 320px;
+  max-width: 767px;
   min-height: 100%;
+}
+
+.is-hidden .mob-menu-container {
+  transform: translateY(-100%);
 }
 
 .mob-menu-container {
@@ -428,6 +433,10 @@ body {
   justify-content: space-between;
   height: 100%;
   padding: 48px 40px;
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing);
 }
 
 .mob-menu__list {
@@ -484,6 +493,7 @@ body {
 
 .mob-menu-contacts__tel {
   text-decoration: none;
+  font-weight: 500;
   font-size: 27px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -726,7 +736,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .order__policy span {
@@ -748,7 +758,7 @@ body {
   .order__policy {
     font-size: 12px;
     line-height: 1.71;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1058,25 +1068,25 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts__mail {
+  .contacts__link-mail {
     padding-top: 21px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts__mail {
+  .contacts__link-mail {
     padding: 32px 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contacts__tell {
+  .contacts__link-tell {
     padding-bottom: 21px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts__tell {
+  .contacts__link-tell {
     padding: 32px 0;
   }
 }
@@ -1211,6 +1221,7 @@ body {
   height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-1x.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 118px 0;
@@ -1225,7 +1236,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     width: 100%;
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-1x.jpg);
   }
 }
@@ -1625,6 +1635,12 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__map {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__map {
     margin-right: 70px;
@@ -1847,7 +1863,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .portfolio-projects__card {
-    flex-grow: +1;
+    flex-grow: 1;
   }
 }
 

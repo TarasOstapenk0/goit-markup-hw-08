@@ -59,7 +59,7 @@
     color: var(--hover-color);
   }
 }
-.contacts__mail {
+.contacts__link-mail {
   @media screen and (min-width: 768px) {
     padding-top: 21px;
   }
@@ -67,7 +67,7 @@
     padding: 32px 0;
   }
 }
-.contacts__tell {
+.contacts__link-tell {
   @media screen and (min-width: 768px) {
     padding-bottom: 21px;
   }
